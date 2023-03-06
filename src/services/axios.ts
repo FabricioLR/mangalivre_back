@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: "https://mangalivre.net/",
+    baseURL: "https://cors.ryanking13.workers.dev/?u=https://mangalivre.net/",
     headers: {
         "HTTP_X_REQUESTED_WITH": "XMLHttpRequest",
         "X-Requested-With": "XMLHttpRequest",
