@@ -19,6 +19,7 @@ export const get = async () => {
 
         return manhuas
     } catch (error: any) {
+        console.log("manhua get error", error)
         throw error.message
     }
 }

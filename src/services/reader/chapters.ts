@@ -26,6 +26,7 @@ export const chapters = async (serieId: string) => {
 
         return data
     } catch (error: any) {
+        console.log("reader chapters error", error)
         throw error.message
     }
 }

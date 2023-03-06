@@ -24,6 +24,7 @@ export const serie = async (search: string) => {
 
         return response.data.series[0]
     } catch (error: any) {
+        console.log("reader serie error", error)
         throw error.message
     }
 }

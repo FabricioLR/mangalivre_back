@@ -6,6 +6,7 @@ export const chapter = async (chapterId: string) => {
 
         return await (await api.get("leitor/pages/" + chapterId + ".json")).data.images
     } catch (error: any) {
+        console.log("reader chapter error", error)
         throw error.message
     }
 }

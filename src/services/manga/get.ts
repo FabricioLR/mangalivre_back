@@ -19,6 +19,7 @@ export const get = async () => {
 
         return mangas
     } catch (error: any) {
+        console.log("manga get error", error)
         throw error.message
     }
 }

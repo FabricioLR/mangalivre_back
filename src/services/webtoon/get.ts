@@ -19,6 +19,7 @@ export const get = async () => {
 
         return webtoons
     } catch (error: any) {
+        console.log("webtoon get error", error)
         throw error.message
     }
 }
